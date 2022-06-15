@@ -3,6 +3,7 @@ import { DataSource } from "typeorm";
 import { EmbeddedEntity } from "./entity/EmbeddedEntities";
 import { EntityInheritance } from "./entity/EntitiesInheritance";
 import { User } from "./entity/User";
+import { Category, Post, PostCatory } from "./entity/ViewEntites";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -13,7 +14,7 @@ export const AppDataSource = new DataSource({
   database: "postgres",
   synchronize: true,
   logging: false,
-  entities: [User, EmbeddedEntity, EntityInheritance],
+  entities: [Post, Category, PostCatory],
   migrations: [],
   subscribers: [],
 });

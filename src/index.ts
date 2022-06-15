@@ -1,8 +1,9 @@
 import { AppDataSource } from "./data-source";
+import { handleViewEntity } from "./entity/ViewEntites";
 // import { User } from "./entity/User";
 
 AppDataSource.initialize()
   .then(async () => {
-    console.log("SUCCESSFULLY");
+    handleViewEntity();
   })
   .catch((error) => console.log(error));
