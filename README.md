@@ -6,7 +6,7 @@
 
 > `Embedded entities`
 >
-> > > Reduce duplication of code writting.
+> > Reduce duplication of code writting.
 
 <details>
 
@@ -50,7 +50,7 @@
 
 > `Entity Inheritance`
 >
-> > > Reduce duplication of code writting
+> > Reduce duplication of code writting
 
 <details>
   <summary>more</summary>
@@ -89,3 +89,15 @@ CREATE TABLE IF NOT EXISTS public.entity_inheritance
 ```
 
 </details>
+
+> `Tree entities`
+>
+> > Adjacency list
+
+> > Nested set
+
+> > Materialized Path (aka Path Enumeration)
+
+> > Closure table
+
+> > Working with tree entities
