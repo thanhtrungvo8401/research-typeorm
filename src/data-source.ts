@@ -1,5 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
+import { EmbeddedEntity } from "./entity/EmbeddedEntities";
 import { User } from "./entity/User";
 
 export const AppDataSource = new DataSource({
@@ -10,8 +11,8 @@ export const AppDataSource = new DataSource({
   password: "changeme",
   database: "postgres",
   synchronize: true,
-  logging: false,
-  entities: [User],
+  logging: true,
+  entities: [User, EmbeddedEntity],
   migrations: [],
   subscribers: [],
 });
