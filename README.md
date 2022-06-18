@@ -62,3 +62,9 @@ Working with tree entities
 > Using `EntityManager`, we can `insert, update, delete, load` just like a `collection` of all `entity repositories`
 
 > You can access the entity manager via `DataSource`
+> <a href='https://typeorm.io/working-with-entity-manager' >Entity manager</a>
+
+#### `Repository`
+
+> `Repository` is just like `EntityManager` but its operations are limited to a concrete entity. You can access the repository via `EntityManager` or `dataSource`;
+> <a href='https://typeorm.io/working-with-repository' >Repository</a>
