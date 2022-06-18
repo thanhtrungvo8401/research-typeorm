@@ -14,4 +14,5 @@ export const AppDataSource = new DataSource({
   entities: [Category, Question],
   migrations: [],
   subscribers: [],
+  dropSchema: true,
 });
