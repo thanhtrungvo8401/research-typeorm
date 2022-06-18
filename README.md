@@ -54,3 +54,11 @@ Working with tree entities
 #### `Many-to-one / one-to-many relations`:
 
 <a href='https://typeorm.io/many-to-one-one-to-many-relations' >Many-to-one / one-to-many</a>
+
+## Entity Manerger And Repository:
+
+#### `Entity manerger`
+
+> Using `EntityManager`, we can `insert, update, delete, load` just like a `collection` of all `entity repositories`
+
+> You can access the entity manager via `DataSource`
