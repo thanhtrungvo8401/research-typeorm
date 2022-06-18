@@ -52,46 +52,7 @@
 ### `Entity Inheritance`
 
 > Reduce duplication of code writting
-
-<details>
-  <summary>more</summary>
-
-```js
-abstract class Content {
-@PrimaryGeneratedColumn("uuid")
-id: string;
-
-@Column({ type: Date, nullable: true })
-createdAt: Date;
-
-@Column()
-updatedAt: Date;
-}
-
-@Entity()
-export class EntityInheritance extends Content {
-@Column()
-author: string;
-
-@Column()
-title: string;
-}
-
-CREATE TABLE IF NOT EXISTS public.entity_inheritance
-(
-    id uuid NOT NULL DEFAULT uuid_generate_v4(),
-    "createdAt" timestamp without time zone,
-    "updatedAt" timestamp without time zone NOT NULL,
-    author character varying COLLATE pg_catalog."default" NOT NULL,
-    title character varying COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT "PK_4e270010d6ef40bf8f9e8ac7beb" PRIMARY KEY (id)
-)
-
-```
-
-</details>
-
----
+> <a href='https://github1s.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/entity/EntitiesInheritance.ts' >Go to code</a>
 
 ### `Tree entities`
 
@@ -115,8 +76,8 @@ Working with tree entities
 
 ### `View Entity`
 
-> A custom entity contain information that we want (virtual table, not exist in DB)
-> <a href='https://github.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/entity/ViewEntites.ts' target='_blank' >Go to code</a>
+> A custom entity contain information that we want such as join, select, merge table... (virtual table, not exist in DB)
+> <a href='https://github1s.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/entity/ViewEntites.ts' target='_blank' >Go to code</a>
 
 ## Relations:
 
