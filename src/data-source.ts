@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { Category, Question } from "./relations/cascades";
+import { Profile, User } from "./relations/oneToOne";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
   database: "postgres",
   synchronize: true,
   logging: false,
-  entities: [Category, Question],
+  entities: [Profile, User],
   migrations: [],
   subscribers: [],
   dropSchema: true,

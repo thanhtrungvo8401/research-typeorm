@@ -1,7 +1,5 @@
 import { AppDataSource } from "./data-source";
-import { handleViewEntity } from "./entity/ViewEntites";
-import { test } from "./relations/cascades";
-// import { User } from "./entity/User";
+import { test } from "./relations/oneToOne";
 
 AppDataSource.initialize()
   .then(async () => {
