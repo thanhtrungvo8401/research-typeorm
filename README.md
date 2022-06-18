@@ -50,3 +50,7 @@ Working with tree entities
 #### `One to One`:
 
 <a href='https://github1s.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/relations/oneToOne.ts' >One to One</a>
+
+#### `Many-to-one / one-to-many relations`:
+
+<a href='https://typeorm.io/many-to-one-one-to-many-relations' >Many-to-one / one-to-many</a>
