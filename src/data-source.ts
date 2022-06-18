@@ -1,9 +1,6 @@
 import "reflect-metadata";
 import { DataSource } from "typeorm";
-import { EmbeddedEntity } from "./entity/EmbeddedEntities";
-import { EntityInheritance } from "./entity/EntitiesInheritance";
-import { User } from "./entity/User";
-import { Category, Post, PostCatory } from "./entity/ViewEntites";
+import { Category, Question } from "./relations/cascades";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -14,7 +11,7 @@ export const AppDataSource = new DataSource({
   database: "postgres",
   synchronize: true,
   logging: false,
-  entities: [Post, Category, PostCatory],
+  entities: [Category, Question],
   migrations: [],
   subscribers: [],
 });
