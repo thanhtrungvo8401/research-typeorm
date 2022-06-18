@@ -2,9 +2,11 @@
 
 ## Datasouce:
 
+---
+
 ## Entity:
 
-### `Embedded entities`
+#### `Embedded entities`
 
 > Reduce duplication of code writting.
 > <a href='https://github1s.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/entity/EmbeddedEntities.ts' >Go to code</a>
@@ -32,12 +34,12 @@ Working with tree entities
 </blockquote>
 </details>
 
----
-
 #### `View Entity`
 
 > A custom entity contain information that we want such as join, select, merge table... (virtual table, not exist in DB)
 > <a href='https://github1s.com/thanhtrungvo8401/typeorm-expressjs-typescript/blob/master/src/entity/ViewEntites.ts' target='_blank' >Go to code</a>
+
+---
 
 ## Relations:
 
